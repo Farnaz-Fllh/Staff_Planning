@@ -8,7 +8,7 @@ Welcome to my GitHub repository, where I've compiled my analysis, thought proces
 ## Final Report
 
 The repository includes the final report in two formats for convenience:
-- **PDF Format**: `Report.pdf`[Report.pdf]
+- **PDF Format**: `Report.pdf`[Report.pdf](Report.pdf)
 `
 - **Jupyter Notebook Format**: `Report.ipynb`
 
