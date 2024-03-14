@@ -54,7 +54,7 @@ The developed package provides the following advantages:
 
 ## Simulation Results: Service Center Performance Metrics
 
-The file `all_service_centers_average_monthly_performance_metrics.csv` contains the average summary performance metrics for two service centers for the year 2023, derived from 50 different staffing scenarios, each considering technician staffing levels from 1 to 5. This dataset is the outcome of employing the `StaffPlanalytics` package to evaluate the performance of service centers under various staffing configurations, offering insights into the operational impacts of staffing decisions on service efficiency and customer satisfaction.
+The file [all_service_centers_average_monthly_performance_metrics.csv](all_service_centers_average_monthly_performance_metrics.csv) contains the average summary performance metrics for two service centers for the year 2023, derived from 50 different staffing scenarios, each considering technician staffing levels from 1 to 5. This dataset is the outcome of employing the `StaffPlanalytics` package to evaluate the performance of service centers under various staffing configurations, offering insights into the operational impacts of staffing decisions on service efficiency and customer satisfaction.
 
 
 ## License
