@@ -8,7 +8,8 @@ Welcome to my GitHub repository, where I've compiled my analysis, thought proces
 ## Final Report
 
 The repository includes the final report in two formats for convenience:
-- **PDF Format**: `Report.pdf`
+- **PDF Format**: `[Report](Report.pdf)`
+`
 - **Jupyter Notebook Format**: `Report.ipynb`
 
 These documents detail the analytical process, findings, and strategic recommendations developed through comprehensive analysis.
