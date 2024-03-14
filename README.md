@@ -8,9 +8,9 @@ Welcome to my GitHub repository, where I've compiled my analysis, thought proces
 ## Final Report
 
 The repository includes the final report in two formats for convenience:
-- **PDF Format**: `Report.pdf`[Report.pdf](Report.pdf)
+- **PDF Format**: [Report.pdf](Report.pdf)
 `
-- **Jupyter Notebook Format**: `Report.ipynb`
+- **Jupyter Notebook Format**: [Report.ipynb](Report.ipynub)
 
 These documents detail the analytical process, findings, and strategic recommendations developed through comprehensive analysis.
 
@@ -26,7 +26,7 @@ As a pivotal part of the solution, I introduce `StaffPlanalytics`, an object-ori
 
 ### Overview
 
-`StaffPlanalytics` is a "Python package" designed to assist staff planning of service centers. The package simulates the operations of service centers based on given number of technicians, detailed service duration data and service demands arrival patterns. This package leverages discrete event simulation and agenet-based modeling techniques to provide actionable insights for service center management. It mimics the real-world service center operations and enables visualizing the impact of different staffing levels on service efficiency and customer wait times.
+`StaffPlanalytics` is a "Python package" designed to assist staff planning of service centers. The package simulates the operations of service centers based on a given number of technicians, detailed service duration data and service demands arrival patterns. This package leverages discrete event simulation and agent-based modeling techniques to provide actionable insights for service center management. It mimics real-world service center operations and enables visualizing the impact of different staffing levels on service efficiency and customer wait times.
 ### Key Features
 - **Object-Oriented Design**: Facilitates easy integration and scalability within any operational analysis toolkit.
 - **Modular Architecture**: Comprising three primary modules - `main`, `declare`, and `utils`, each serving a specific role in the simulation process.
@@ -34,7 +34,7 @@ As a pivotal part of the solution, I introduce `StaffPlanalytics`, an object-ori
 
 ### Modules Overview
 - **Main Module**: Serves as the entry point for running simulations, orchestrating the use of other modules to execute the simulation of service centers.
-- **Declare Module**: Reads the input data and defines necessary input parameters of the simulation package including the historical service demand and service durations data, number of service centers, technicians, type of available services, etc.
+- **Declare Module**: Reads the input data and defines necessary input parameters of the simulation package including the historical service demand and service duration data, number of service centers, technicians, type of available services, etc.
 - **Utils Module**:  Defines the simulation entities, including service centers, technicians, and vehicles (customers), along with their attributes and behaviors. Provides utility functions and supporting operations necessary for running the simulations, including data processing and result visualization tools.
 
 The developed package provides the following advantages: 
