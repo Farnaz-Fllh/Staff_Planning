@@ -1,0 +1,107 @@
+# StaffPlanalytics User Manual
+
+This document provides detailed technical guidance on using the `StaffPlanalytics` simulation package for service center workforce planning. It is intended for developers, analysts, or operational planners seeking to understand and extend the functionality.
+
+---
+
+## 📦 Overview
+
+`StaffPlanalytics` is a modular Python package that uses discrete event simulation (DES) and agent-based modeling (ABM) to replicate service center operations and analyze technician staffing scenarios. It helps identify bottlenecks, optimize technician levels, and improve service center performance.
+
+## 🧠 Core Capabilities
+
+1. **Realistic Operational Modeling**
+2. **Queue Management (First Come, First Serve)**
+3. **Technician Utilization Tracking**
+4. **Scenario Testing (what-if analysis)**
+5. **Bottleneck Identification**
+6. **Customer Satisfaction Metrics**
+
+---
+
+## ⚙️ Simulation Architecture
+
+The package consists of three modules:
+
+- `declare.py`: Defines input parameters and simulation constants.
+- `utils.py`: Houses core classes (Vehicle, Technician, ServiceCenter) and utility functions.
+- `main.py`: Runs the simulation by orchestrating the flow.
+
+### Class Summary
+
+#### Vehicle
+- Tracks service status, duration, waiting time.
+
+#### Technician
+- Tracks working hours, availability, number of services completed.
+
+#### ServiceCenter
+- Tracks queue, serviced vehicles, technician assignment, and all performance metrics per month.
+
+---
+
+## ▶️ Running a Simulation
+
+Example flow from `main.py`:
+
+```python
+from utils import *
+import declare as dcl
+
+# Step 1: Load and process demand data
+df, volume_dict = calculate_service_centers_monthly_delivered_volume(dcl.service_center_delivered_df)
+
+# Step 2: Initialize service center objects
+service_centers = create_service_centers(...)
+
+# Step 3: Run simulations for each staffing level
+for center in service_centers:
+    for n_techs in range(dcl.min_techs, dcl.max_techs + 1):
+        perf_report, _ = simulate_service_centers_performance(...)
+        # Collect & export metrics
+```
+
+---
+
+## 📊 Output
+
+Main output: `all_service_centers_average_monthly_performance_metrics.csv`
+
+Each row contains:
+- Service center ID
+- Month
+- Number of technicians
+- KPIs: queue length, waiting time, utilization, number of services completed, etc.
+
+---
+
+## 🔍 Performance Metrics
+
+### Monthly Metrics
+- Number of services requested (pre & post)
+- Fulfilled vs. backlog services
+- Queue waiting time
+- Technician worked hours
+
+### Cumulative Metrics
+- Running totals across all months per scenario
+
+---
+
+## 📁 Folder Structure
+
+```bash
+StaffPlanalytics/
+├── declare.py              # Inputs and configs
+├── utils.py                # Classes and helpers
+├── main.py                 # Simulation script
+├── USER_MANUAL.md          # This file
+├── README.md               # Project overview
+├── Report.pdf / .ipynb     # Final analysis
+└── all_service_centers_average_monthly_performance_metrics.csv
+
+---
+
+## 📄 License
+This project is licensed under the MIT License.
+
