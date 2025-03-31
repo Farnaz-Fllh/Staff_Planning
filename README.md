@@ -66,7 +66,7 @@ Results will be saved as `all_service_centers_average_monthly_performance_metric
 
 ## 📘 Documentation
 
-For detailed class structures, assumptions, and code explanations, please refer to the [User Manual](USER_MANUAL.md).
+For detailed class structures, assumptions, and code explanations, please refer to the [User Manual](User_Manual.md).
 
 ---
 
